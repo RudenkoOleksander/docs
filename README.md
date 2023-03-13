@@ -2,6 +2,7 @@
 * #### Get user sessions
 
 > POST admin/user/sessions/get
+
 	content-type: application/json
 	body: {
 		"request_id": integer
