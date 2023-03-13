@@ -29,8 +29,8 @@ table {
 
 > **Result**
 
-| Result name | Value |
-| ----------- | ----- |
+| Result name                         | Value  |
+| ----------------------------------- | ------ |
 | success                             | 0      |
 | fail_by_token_invalid               | -1     |
 | fail_by_token_expired               | -2     |
