@@ -21,6 +21,9 @@
 | result       | Result     |
 | sessions     | sessions   |
 
+> Produces
+  + application/json
+  
     result: {
         fail_by_invalid_parameters,          = -5,
         fail_by_service_temporary_not_valid, = -4,
