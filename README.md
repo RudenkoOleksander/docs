@@ -1,7 +1,7 @@
 ## Admin API
 * #### Get user sessions
 
-> #0969DA POST /admin/user/sessions/get
+> `#0969DA` POST /admin/user/sessions/get
 
 	content-type: application/json
 	body: {
