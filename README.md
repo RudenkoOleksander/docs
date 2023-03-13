@@ -5,6 +5,7 @@ table {
 ## Admin API
 ----------------------------------------------------------------
 ### Get user sessions
+- ![#ba3925](### Get user sessions) `#ba3925`
 
 > POST /admin/user/sessions/get
 
