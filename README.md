@@ -5,7 +5,9 @@ table {
 ## Admin API
 ----------------------------------------------------------------
 ### Get user sessions
+```diff
 ! Get user sessions
+```
 
 > POST /admin/user/sessions/get
 
