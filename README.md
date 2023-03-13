@@ -37,6 +37,7 @@
 > **Sessions**
 
   "sessions":
+  
     [
         {
         "client_id":     string,
