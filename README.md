@@ -13,6 +13,8 @@
 | request_id   | integer    |
 | access_token | AA.BB.CC   |
 
+> Responce
+
 | Parameters   | Schema     |
 | ------------ | ---------- |
 | request_id   | Integer    |
