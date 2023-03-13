@@ -4,17 +4,17 @@
 
 > POST /admin/user/sessions/get
 
-> content-type
+> **Content-type**
   + application/json
 
-> Request body
+> **Request body**
 
 | Parameters   | Schema     |
 | ------------ | ---------- |
 | request_id   | Integer    |
 | access_token | AA.BB.CC   |
 
-> Responce
+> **Responce**
 
 | Parameters   | Schema     |
 | ------------ | ---------- |
@@ -22,7 +22,7 @@
 | result       | result     |
 | sessions     | sessions   |
 
-> Produces
+> **Produces**
   + application/json
 
 | Result name | Value |
