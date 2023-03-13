@@ -1,3 +1,7 @@
+table {
+    width:100%;
+}
+
 ## Admin API
 ----------------------------------------------------------------
 ### Get user sessions
@@ -34,7 +38,9 @@
 | fail_by_service_temporary_not_valid | -4     |
 | fail_by_invalid_parameters          | -5     |
 
-> **sessions**
+> **Sessions**
+
+    "sessions":
 
     [
         {
