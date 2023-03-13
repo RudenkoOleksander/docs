@@ -6,11 +6,11 @@
 
     content-type: application/json
 
- > Request body
-|parameter|value type|
-|---------|----------|
-|request_id|integer|
-|access_token|AA.BB.CC|
+> Request body
+| parameter | value type |
+| --------- | ---------- |
+| request_id | integer |
+| access_token | AA.BB.CC |
 
     responce: {
         "request_id": integer,
