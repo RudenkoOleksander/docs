@@ -15,6 +15,8 @@
 | access_token | AA.BB.CC   |
 
 > **Responce**
+> **Produces**
+  + application/json
 
 | Parameters   | Schema     |
 | ------------ | ---------- |
@@ -22,9 +24,8 @@
 | result       | result     |
 | sessions     | sessions   |
 
-> **Produces**
-  + application/json
-
+> **Result**
+> 
 | Result name | Value |
 | ----------- | ----- |
 | success                             | 0      |
