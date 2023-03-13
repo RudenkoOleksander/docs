@@ -5,9 +5,8 @@ table {
 ## Admin API
 ----------------------------------------------------------------
 ### Get user sessions
-```diff
-! Get user sessions
-```
+
+<font color="red">### This is some text!</font> Get user sessions
 
 > POST /admin/user/sessions/get
 
