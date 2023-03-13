@@ -13,11 +13,11 @@
 | request_id   | integer    |
 | access_token | AA.BB.CC   |
 
-    responce: {
-        "request_id": integer,
-        "result":     integer,
-        "sessions":   (JSON_ARRAY)
-    }
+| Parameters   | Schema     |
+| ------------ | ---------- |
+| request_id   | Integer    |
+| result       | Result     |
+| sessions     | sessions   |
 
     result: {
         fail_by_invalid_parameters,          = -5,
