@@ -36,14 +36,14 @@
 
 > **Sessions**
 
-"sessions":
-  [
-      {
-      "client_id":     string,
-      "created_dt":    uint64,
-      "expiration_dt": uint64,
-      "ip":            string,
-      "session_id":    string
-      },
-      {...}
-  ]
+  "sessions":
+    [
+        {
+        "client_id":     string,
+        "created_dt":    uint64,
+        "expiration_dt": uint64,
+        "ip":            string,
+        "session_id":    string
+        },
+        {...}
+    ]
