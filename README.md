@@ -34,17 +34,15 @@
 | fail_by_service_temporary_not_valid | -4     |
 | fail_by_invalid_parameters          | -5     |
 
-> **Sessions**
+> **sessions**
 
-  "sessions":
-  
-    [
-        {
-        "client_id":     string,
-        "created_dt":    uint64,
-        "expiration_dt": uint64,
-        "ip":            string,
-        "session_id":    string
-        },
-        {...}
-    ]
+  [
+      {
+      "client_id":     string,
+      "created_dt":    uint64,
+      "expiration_dt": uint64,
+      "ip":            string,
+      "session_id":    string
+      },
+      {...}
+  ]
