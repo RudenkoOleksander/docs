@@ -22,6 +22,8 @@ if success status code 200 else 403
 ----------------------------------------------------------------
 ### $\color{#ba3925}{\textrm{Get user sessions}}$ 
 
+> Returns all active user sessions, if any
+
 **Request**
 
 Value              | Description 
@@ -97,6 +99,8 @@ Content-Type: application/json; charset=UTF-8
 ----------------------------------------------------------------
 ### $\color{#ba3925}{\textrm{User sessions logout}}$ 
 
+> Allows for the logout of all specified sessions using the provided session IDs
+
 **Request**
 
 Value              | Description 
@@ -117,7 +121,7 @@ sessions_id        | true     | json_array     |
 ### **Example**
 
 ```
-POST /admin/user/sessions/get
+POST /admin/user/sessions/logout
 Host: rs0.hypersecureid.com
 Authorization: Bearer AA.BB.CC
 content-Type: application/json
@@ -161,6 +165,9 @@ Content-Type: application/json; charset=UTF-8
 ----------------------------------------------------------------
 ### $\color{#ba3925}{\textrm{User devices get}}$
 
+> Returns a list of all the devices that the user has used to sign in to his account.
+  Contains detailed information about the device, as well as information about all active sessions that are currently open on the device
+
 **Request**
 
 Value              | Description 
@@ -179,7 +186,7 @@ request_id         | false    | int64          | Opaque value used to maintain i
 ### **Example**
 
 ```
-POST /admin/user/sessions/get
+POST /admin/user/devices/get
 Host: rs0.hypersecureid.com
 Authorization: Bearer AA.BB.CC
 content-Type: application/json
@@ -269,6 +276,8 @@ Content-Type: application/json; charset=UTF-8
 ----------------------------------------------------------------
 ### $\color{#ba3925}{\textrm{User devices blocked update}}$
 
+> Allows to block or unblock specified devices by providing theirs IDs
+
 **Request**
 
 Value              | Description 
@@ -289,7 +298,7 @@ is_blocked         | true     | boole          |
 ### **Example**
 
 ```
-POST /admin/user/sessions/get
+POST /admin/user/devices/is-blocked-update
 Host: rs0.hypersecureid.com
 Authorization: Bearer AA.BB.CC
 content-Type: application/json
@@ -331,9 +340,10 @@ Content-Type: application/json; charset=UTF-8
 }
 ```
 
-
 ----------------------------------------------------------------
 ### $\color{#ba3925}{\textrm{Users load}}$
+
+> Loads detailed information about the user based on specified filter values
 
 **Request**
 
@@ -341,16 +351,16 @@ Value              | Description
 -------------------|---------------
 URI                | https://rs0.hypersecureid.com/admin/users/load
 Sandbox URI        | https://rs0_sandbox.hypersecureid.com/admin/users/load
-Method             | POST     
-Authorization      | Bearer AA.BB.CC     
+Method             | POST 
+Authorization      | Bearer AA.BB.CC 
 Content-type       | application/json
 
 **Body Json Field**
 Name               | Required | Type          | Description
 -------------------|----------|----------------|---------------------
 request_id         | false    | int64          | Opaque value used to maintain id between the request and response.
+filter_value       | true     | string         | See table below
 filter_mode        | true     | integer        | See table below
-filter_value       | true     | string         | 
 
 **Filter modes**
 
@@ -364,6 +374,19 @@ Value  | Mode                                |
 5      | email                               |
 6      | kyc_applicant_id                    |
 
+### **Example**
+
+```
+POST /admin/users/load
+Host: rs0.hypersecureid.com
+Authorization: Bearer AA.BB.CC
+content-Type: application/json
+{
+       "request_id": 42
+	   "filter_mode": 0,
+	   "filter_value": "twitter-user-id",
+}
+```
 
 ## Responce
 
